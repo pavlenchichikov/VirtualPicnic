@@ -29,7 +29,7 @@ import java.util.Scanner;
             Scanner scanner = new Scanner(new File(filePath));
             Worlds longestWord = new Worlds();
             while (scanner.hasNext()) {
-                String word = scanner.next().toLowerCase(); // Приведение слова к нижнему регистру перед сравнением
+                String word = scanner.next().toLowerCase();
                 if (longestWord.getTitle() == null || word.length() > longestWord.getLength()) {
                     longestWord.setTitle(word);
                     longestWord.setLength(word.length());
