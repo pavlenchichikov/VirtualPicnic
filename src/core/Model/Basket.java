@@ -18,7 +18,7 @@ import java.util.Scanner;
             Scanner scanner = new Scanner(new File(filePath));
             int count = 0;
             while (scanner.hasNext()) {
-                scanner.next().toLowerCase(); // Приведение слова к нижнему регистру перед подсчетом
+                scanner.next().toLowerCase();
                 count++;
             }
             scanner.close();
@@ -43,7 +43,7 @@ import java.util.Scanner;
             Scanner scanner = new Scanner(new File(filePath));
             Map<String, Integer> wordFrequency = new HashMap<>();
             while (scanner.hasNext()) {
-                String word = scanner.next().toLowerCase(); // Приведение слова к нижнему регистру перед добавлением или сравнением
+                String word = scanner.next().toLowerCase();
                 wordFrequency.put(word, wordFrequency.getOrDefault(word, 0) + 1);
             }
             scanner.close();
